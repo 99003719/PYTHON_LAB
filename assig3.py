@@ -1,11 +1,13 @@
 #isogram
 
-def iso(a):
-    return len(a) == len(set(a.lower()))
-
-print(iso("animal"))
-print(iso("malayalam"))
-print(iso("fruits"))
+def iso(w):
+    l = []
+    for x in w:
+        if x in l:
+            return False
+        else:
+            l.append(x)
+    return True
 
 #Compute the word frequency in given message
 
