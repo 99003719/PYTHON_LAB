@@ -50,7 +50,7 @@ def a_s(l, time):
     c = len(l)
     for x in range(len(l)-1):
         t+= l[x+1] - l[x]
-    return round(t/c * 60, 3)
+    return round(t/(c*time)* 60, 3)
 
 
 #difference between 2 lowest numbers in the list //
